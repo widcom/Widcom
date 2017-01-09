@@ -1,0 +1,474 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>widcom</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS-Filer -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- END CSS-Filer -->
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400i,700,700i" rel="stylesheet">
+<!-- END Google Fonts -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+<!-- SCRIPT FÖR PRISER -->
+<script>
+$(document).ready(function () {
+	
+	$('#toggle-dropdown li').click(function () {
+
+		var text = $(this).children('div.panel');
+
+		if (text.is(':hidden')) {
+			text.slideDown('100');	
+		} else {
+			text.slideUp('100');	
+		}
+		
+	});
+
+});
+</script>
+<!-- END SCRIPT FÖR PRISER -->
+
+</head>
+
+<body>
+
+<div class="container-fluid marg_80" id="mystart"></div>
+
+
+
+<!-- NAVBAR -->
+<div class="MinNavbar">
+  <nav class="navbar navbar-inverse navbar-fixed-top classsvart">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="widcom">
+        </a>
+      </div>
+      <div id="navbar3" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" id="start">START</a></li>
+          <li><a href="#" id="portfolio">PORTFOLIO</a></li>
+          <li><a href="#" id="kunder">KUNDER</a></li>
+		  <li><a href="#" id="kontakt">KONTAKT</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="glyphicon glyphicon-user"></span> MINA SIDOR <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li class="disabled"><a href="#">Logga in</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+		  </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- END NAVBAR -->
+
+
+<!-- SCRIPT FÖR SMOOTH-SCROLL -->
+<script>
+$("#start").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#mystart").offset().top
+    }, 2000);
+});
+</script>
+
+<script>
+$("#portfolio").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#myportfolio").offset().top
+    }, 2000);
+});
+</script>
+
+<script>
+$("#kunder").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#mykunder").offset().top
+    }, 2000);
+});
+</script>
+
+<script>
+$("#kontakt").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#mykontakt").offset().top
+    }, 2000);
+});
+</script>
+<!-- END SCRIPT FÖR SMOOTH-SCROLL -->
+
+
+
+
+
+
+<!-- JUMBOTRON -->
+<div class="jumbotron">
+  <div class="container">
+    <div class="tom_space"></div>
+    <h1>VI ÄLSKAR KOD, VI ÄLSKAR DESIGN!</h1>
+    <p>Vi erbjuder dig och ditt företag en komplett lösning.</p>
+    <p><a id="portfolio" class="knappen_1" role="button">Läs mer &raquo;</a></p>
+  </div>
+</div>
+<!-- END JUMBOTRON -->
+
+
+
+
+
+
+<!-- JUMBOTRON -->
+<div class="container">
+  <div class="col-md-4 for_info">
+    <div class="col-md-12"><img src="img/icon_cde.png" /></div>
+	<div class="col-md-12"><h2>- CODE -</h2></div>
+	<div class="col-md-12"><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis efficitur nisl quis consequat. Morbi tincidunt augue justo, a efficitur sem euismod pulvinar. Etiam rutrum luctus magna tincidunt lobortis. Aenean ultrices in nisi eu efficitur.</h4></div>
+  </div>
+  <div class="col-md-4 for_info">
+    <div class="col-md-12"><img src="img/icon_des.png" /></div>
+	<div class="col-md-12"><h2>- DESIGN -</h2></div>
+	<div class="col-md-12 for_info_border"><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis efficitur nisl quis consequat. Morbi tincidunt augue justo, a efficitur sem euismod pulvinar. Etiam rutrum luctus magna tincidunt lobortis. Aenean ultrices in nisi eu efficitur.</h4></div>
+  </div>
+  <div class="col-md-4 for_info">
+    <div class="col-md-12"><img src="img/icon_sup.png" /></div>
+	<div class="col-md-12"><h2>- SUPPORT -</h2></div>
+	<div class="col-md-12 for_info_border"><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis efficitur nisl quis consequat. Morbi tincidunt augue justo, a efficitur sem euismod pulvinar. Etiam rutrum luctus magna tincidunt lobortis. Aenean ultrices in nisi eu efficitur.</h4></div>
+  </div>
+</div>
+<!-- END JUMBOTRON -->
+
+
+
+
+
+
+<!-- REKLAM -->
+<div class="container-fluid reklam">
+  <div class="container">
+    <div class="col-lg-6 col-md-6">
+	  <h1>RESPONSIV DESIGN</h1>
+	  <p>Vi erbjuder dig och ditt företag en bra lösning.</p>
+	  <ul id="toggle-dropdown">
+	    <li>
+		  <h3>  Pkt <strong class="orange">Small</strong> - 199 SEK/mån</h3>
+		  <div class="panel">
+			<p><span class="glyphicon glyphicon-ok gron"></span> 15 GB utrymme</p>
+            <p><span class="glyphicon glyphicon-ok gron"></span> 512 MB RAM</p>
+            <p><span class="glyphicon glyphicon-ok gron"></span> En databas</p>
+            <p><span class="glyphicon glyphicon-ok gron"></span> En domän</p>
+            <p><span class="glyphicon glyphicon-ok gron"></span> SSL</p>
+			<a href="" class="">Välj paket</a>
+		  </div>
+	    </li>
+	    <li>
+		  <h3>  Pkt <strong class="orange">Medium</strong> - 299 SEK/mån</h3>
+		  <div class="panel">
+			<p><span class="glyphicon glyphicon-ok gron"></span> 200 GB utrymme</p>
+            <p><span class="glyphicon glyphicon-ok gron"></span> 2 GB RAM</p>
+            <p><span class="glyphicon glyphicon-ok gron"></span> Flera databaser</p>
+            <p><span class="glyphicon glyphicon-ok gron"></span> Flera domäner</p>
+            <p><span class="glyphicon glyphicon-ok gron"></span> SSL</p>
+			<p><span class="glyphicon glyphicon-ok gron"></span> SSH</p>
+			<p><span class="glyphicon glyphicon-ok gron"></span> 4 x CPU</p>
+			<p><span class="glyphicon glyphicon-ok gron"></span> Backup & Återställning</p>
+			<a href="" class="">Välj paket</a>
+		  </div>
+	    </li>
+	    <li>
+		  <h3>  Pkt <strong class="orange">Large</strong> - 399 SEK/mån</h3>
+		  <div class="panel">
+			<p><span class="glyphicon glyphicon-ok gron"></span> 500 GB utrymme</p>
+            <p><span class="glyphicon glyphicon-ok gron"></span> 4 GB RAM</p>
+            <p><span class="glyphicon glyphicon-ok gron"></span> Flera databaser</p>
+            <p><span class="glyphicon glyphicon-ok gron"></span> Flera domäner</p>
+            <p><span class="glyphicon glyphicon-ok gron"></span> SSL</p>
+			<p><span class="glyphicon glyphicon-ok gron"></span> SSH</p>
+			<p><span class="glyphicon glyphicon-ok gron"></span> 8 x CPU</p>
+			<p><span class="glyphicon glyphicon-ok gron"></span> Backup & Återställning</p>
+			<a href="" class="">Välj paket</a>
+		  </div>
+	    </li>
+      </ul>
+	</div>
+	<div class="col-lg-6 col-md-6"><img src="img/responsiv.png" /></div>
+  </div>
+</div>
+<!-- END REKLAM -->
+
+
+
+
+
+
+<!-- PORTFOLIO -->
+<div class="container-fluid portfolio" id="myportfolio">
+  <div class="container">
+    <div class="row">
+	  <div class="col-lg-12">
+	    <h1>- PORTFOLIO -</h1>
+		<p>Här kan du se exempel på hemsidor som vi har skapat.</p>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-lg-3 col-md-4 col-sm-6">
+	    <div class="col-lg-12  div_center_port">
+	      <ul class="demo-2 effect">
+	      <li>
+			<h2 class="zero">www.hemsida.com</h2>
+			<p class="zero">Klicka här för att besöka hemsidan.</p>
+			</li>
+			<li><img class="top" src="img/website1.jpg" alt=""/></li>
+		  </ul>
+	    </div>
+	  </div>
+	  <div class="col-lg-3 col-md-4 col-sm-6">
+	    <div class="col-lg-12  div_center_port">
+	      <ul class="demo-2 effect">
+	      <li>
+			<h2 class="zero">www.hemsida.com</h2>
+			<p class="zero">Klicka här för att besöka hemsidan.</p>
+			</li>
+			<li><img class="top" src="img/website2.jpg" alt=""/></li>
+		  </ul>
+	    </div>
+	  </div>
+	  <div class="col-lg-3 col-md-4 col-sm-6">
+	    <div class="col-lg-12  div_center_port">
+	      <ul class="demo-2 effect">
+	      <li>
+			<h2 class="zero">www.hemsida.com</h2>
+			<p class="zero">Klicka här för att besöka hemsidan.</p>
+			</li>
+			<li><img class="top" src="img/website3.jpg" alt=""/></li>
+		  </ul>
+	    </div>
+	  </div>
+	  <div class="col-lg-3 col-md-4 col-sm-6">
+	    <div class="col-lg-12  div_center_port">
+	      <ul class="demo-2 effect">
+	      <li>
+			<h2 class="zero">www.hemsida.com</h2>
+			<p class="zero">Klicka här för att besöka hemsidan.</p>
+			</li>
+			<li><img class="top" src="img/website4.jpg" alt=""/></li>
+		  </ul>
+	    </div>
+	  </div>
+	  <div class="col-lg-3 col-md-4 col-sm-6">
+	    <div class="col-lg-12  div_center_port">
+	      <ul class="demo-2 effect">
+	      <li>
+			<h2 class="zero">www.hemsida.com</h2>
+			<p class="zero">Klicka här för att besöka hemsidan.</p>
+			</li>
+			<li><img class="top" src="img/website5.jpg" alt=""/></li>
+		  </ul>
+	    </div>
+	  </div>
+	  <div class="col-lg-3 col-md-4 col-sm-6">
+	    <div class="col-lg-12  div_center_port">
+	      <ul class="demo-2 effect">
+	      <li>
+			<h2 class="zero">www.hemsida.com</h2>
+			<p class="zero">Klicka här för att besöka hemsidan.</p>
+			</li>
+			<li><img class="top" src="img/website6.jpg" alt=""/></li>
+		  </ul>
+	    </div>
+	  </div>
+	  <div class="col-lg-3 col-md-4 col-sm-6">
+	    <div class="col-lg-12  div_center_port">
+	      <ul class="demo-2 effect">
+	      <li>
+			<h2 class="zero">www.hemsida.com</h2>
+			<p class="zero">Klicka här för att besöka hemsidan.</p>
+			</li>
+			<li><img class="top" src="img/website7.jpg" alt=""/></li>
+		  </ul>
+	    </div>
+	  </div>
+	  <div class="col-lg-3 col-md-4 col-sm-6">
+	    <div class="col-lg-12  div_center_port">
+	      <ul class="demo-2 effect">
+	      <li>
+			<h2 class="zero">www.hemsida.com</h2>
+			<p class="zero">Klicka här för att besöka hemsidan.</p>
+			</li>
+			<li><img class="top" src="img/website8.jpg" alt=""/></li>
+		  </ul>
+	    </div>
+	  </div>
+	</div>
+  </div>
+  <div class="marginal_div"></div>
+</div>
+<!-- END PORTFOLIO -->
+
+
+
+
+
+
+<!-- KUNDER -->
+<div class="container-fluid" id="mykunder">
+  <div class="container kunder">
+    <div class="row">
+	  <div class="col-lg-12"><h1> - VÅRA KUNDER - </h1></div>
+	  <div class="col-lg-12"><p> Här här vi kunder som har anlitat widcom <p></div>
+	</div>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6"><img src="img/logo_google.png"></div>
+	  <div class="col-lg-3 col-md-4 col-sm-6"><img src="img/logo_samsung.png"></div>
+	  <div class="col-lg-3 col-md-4 col-sm-6"><img src="img/logo_java.png"></div>
+	  <div class="col-lg-3 col-md-4 col-sm-6"><img src="img/logo_lenovo.png"></div>
+	  <div class="col-lg-3 col-md-4 col-sm-6"><img src="img/logo_windows.png"></div>
+	  <div class="col-lg-3 col-md-4 col-sm-6"><img src="img/logo_html.png"></div>
+	  <div class="col-lg-3 col-md-4 col-sm-6"><img src="img/logo_android.png"></div>
+	  <div class="col-lg-3 col-md-4 col-sm-6"><img src="img/logo_chrome.png"></div>
+    </div>
+	<div class="marginal_div"></div>
+  </div>
+</div>
+<!-- END KUNDER -->
+
+
+
+
+
+
+<!-- KONTAKT -->
+<div class="container-fluid kontakt" id="mykontakt">
+  <div class="container">
+    <div class="row">
+      <h1> - KONTAKTA OSS - </h1>
+	  <p>Här kan du kontakta oss!</p>
+    </div>
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-6 vi-som-jobbar">
+	  <div class="col-lg-12"><img src="img/profil_bild1.jpg" /></div>
+	  <div class="col-lg-12">
+	    <h3>Namn Efternamn</h3>
+		<p>- VD -</p>
+	  </div>
+	</div>
+	<div class="col-lg-3 col-md-3 col-sm-6 vi-som-jobbar">
+	  <div class="col-lg-12"><img src="img/profil_bild2.jpg" /></div>
+	  <div class="col-lg-12">
+	    <h3>Namn Efternamn</h3>
+		<p>- DESIGN -</p>
+	  </div>
+	</div>
+	<div class="col-lg-3 col-md-3 col-sm-6 vi-som-jobbar">
+	  <div class="col-lg-12"><img src="img/profil_bild3.jpg" /></div>
+	  <div class="col-lg-12">
+	    <h3>Namn Efternamn</h3>
+		<p>- PROGRAMMERARE -</p>
+	  </div>
+	</div>
+	<div class="col-lg-3 col-md-3 col-sm-6 vi-som-jobbar">
+	  <div class="col-lg-12"><img src="img/profil_bild4.jpg" /></div>
+	  <div class="col-lg-12">
+	    <h3>Namn Efternamn</h3>
+		<p>- SUPPORT -</p>
+	  </div>
+	</div>
+  </div>
+  <div class="row fyll-i-uppgifter"> <span class="glyphicon glyphicon-info-sign"></span>  Fyll i dina uppgifter nedan så hör vi av oss inom 2 timmar.</div>
+  <div class="row">
+    <div class="col-lg-12">
+	  <div class="form-group">
+        <input type="text" class="form-control kontakt_style" id="formGroupExampleInput" placeholder="Namn, företagsnamn:">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control kontakt_style" id="formGroupExampleInput2" placeholder="Epost adress:">
+      </div>
+	  <div class="form-group">
+        <textarea class="form-control kontakt_style" id="exampleTextarea" rows="8" placeholder="Meddelande:"></textarea>
+	  </div>
+	  <div class="form-group">
+        <a class="kontakt_style_submit " href="#" role="button">Skicka meddelande</a>
+      </div>
+	</div>
+  </div>
+  <div class="marginal_div"></div>
+  </div>
+</div>
+<!-- END KONTAKT -->
+
+
+
+
+
+
+<!-- MAP -->
+<div class="container-fluid map_google">
+<div style="width:100%;max-width:100%;overflow:hidden;height:400px;color:red;"><div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Nackademin+AB,+Tomtebodavägen,+Solna,+Sverige&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe></div><a class="google-map-enabler" rel="nofollow" href="http://www.interserver-coupons.com" id="make-map-information">http://www.interserver-coupons.com</a><style>#embed-map-canvas img{max-width:none!important;background:none!important;}</style></div><script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=e9e2263c-43a6-65fb-8f70-1a1402a7a87f&c=google-map-enabler&u=1478629135" defer="defer" async="async"></script>
+</div>
+<!-- END MAP -->
+
+
+
+
+
+
+<!-- FOOTER -->
+<div class="container-fluid footer_div">
+  <div class="container">
+    <div class="row">
+	  <div class="col-lg-12">
+	    <h3>widcom på sociala media</h3>
+		<p>Länkar till widcom på sociala media</p>
+	  </div>
+	</div>
+	<div class="row">
+	  <ul>
+	    <li><img src="img/icon-facebook.png" /></li>
+		<li><img src="img/icon-twitter.png" /></li>
+		<li><img src="img/icon-instagram.png" /></li>
+		<li><img src="img/icon-google.png" /></li>
+		<li><img src="img/icon-linkedin.png" /></li>
+		<li><img src="img/icon-youtube.png" /></li>
+	  </ul>
+	</div>
+	<div class="row"><h5> &copy; Copyright 2016 widcom.se</h5></div>
+  </div>
+</div>
+<!-- END FOOTER -->
+
+
+
+
+
+
+<!-- jQuery & Boostrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- jQuery & Boostrap -->
+
+
+
+</body>
+</html>
+
